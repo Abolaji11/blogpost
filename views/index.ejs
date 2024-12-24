@@ -1,0 +1,58 @@
+<%- include('partials/header.ejs') %>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogPost</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navbar-title">Blog Post</h1>
+            <a href="/create" class="btn-create">Create a New Post</a>
+        </nav>
+    </header>
+    
+      
+    <main class="content-left">
+
+        <h2>if you are not sure of what to read kindly check this out </h2>
+        <div class="posts">
+            <% posts.forEach(post => { %>
+                <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+            <% }) %>
+        </div>
+    </main>
+
+
+
+        <br><br><br><br>
+        <%- include('partials/footer.ejs') %>   
+       
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

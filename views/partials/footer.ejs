@@ -1,0 +1,21 @@
+</main>
+
+<footer>
+  <!-- Step 4 - Add a dynamic year to the footer using JS. -->
+  <p>Copyright &copy; <span id="year"></span> BolabiMedia. All rights reserved.</p>
+  <!-- <p>&copy; <span id="year"></span> BolabiMedia. All rights reserved.</p> -->
+   
+  
+
+  
+
+</footer>
+<script>
+ 
+  const yearElement = document.getElementById('year');
+  const currentYear = new Date().getFullYear();
+  yearElement.textContent = currentYear;
+</script>
+</body>
+
+</html>
