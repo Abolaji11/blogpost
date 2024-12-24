@@ -20,13 +20,21 @@
     
       
     <main class="content-left">
-
+        
+ 
         <h2>if you are not sure of what to read kindly check this out </h2>
         <div class="posts">
+            
+        <ol>
+
             <% posts.forEach(post => { %>
-                <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+               <li> <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2></li>
             <% }) %>
-        </div>
+       
+       
+        </ol>
+    
+    </div>
     </main>
 
 
